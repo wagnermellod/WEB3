@@ -1,0 +1,59 @@
+body {
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-section {
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.card {
+    opacity: .95;
+}
+
+.card-body {
+    background-color: #d1d3d6;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+label {
+    font-weight: bold;
+}
+
+.nav-tabs .nav-item a:not(.active) {
+    background-color: #d1d3d6;
+}
+
+.nav-tabs {
+    border-bottom: 0px;
+}
+
+.modal-content {
+    background-color: #3b4652;
+    opacity: .85;
+    padding: 10px 0px;
+    box-shadow: 0px 0px 3px #848484;
+    margin: 15;
+    margin-top: 100%;
+    position: absolute;
+    left: 50px;
+    height: 35;
+}
+
+.user-img {
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+
+.user-img img {
+    width: 100xp;
+    height: 100px;
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 50%;
+}
+
+button {
+    width: 40%;
+    margin: 5px 0 50px;
+}

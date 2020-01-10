@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Alerta</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+
+    <!--JQUERY-->
+    <link rel=" stylesheet " type="text/css " href="static/css/alerta.css " th:href="@{/css/alerta.css} ">
+    <script type="text/javascript" src="js/alerta.js"></script>
+
+</head>
+
+<body>
+    <form method="GET">
+        <div class=" modal-dialog text-center " id="form_alerta">
+            <div class="col-sm-8 main-section ">
+                <div class="modal-content ">
+                    <div class="col-12 user-img ">
+                        <img src="static/img/exclamation.png " th:src="@{/img/exclamation.png} " />
+                    </div>
+                    <form class="col-12 " method="get ">
+                        <div class="col-12 ">
+
+                        </div>
+                        <div th:if="${param.error} " class="alert alert-danger " role="alert ">
+                            Campo Obrigatório
+                        </div>
+                        <input id="btn_ok" class="btn btn-primary" type="button" value="OK" id="btn_ok">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
